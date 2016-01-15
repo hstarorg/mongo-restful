@@ -5,6 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var app = express();
+var x = require('./mongoAccess');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -26,7 +27,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.send(err.status, {
+    res.send({
       message: err.message,
       error: err
     });

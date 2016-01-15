@@ -1,0 +1,35 @@
+{
+  "name": "mongo-restful",
+  "version": "0.0.1",
+  "description": "A powerful MongoDB RESTful proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hstarorg/mongo-restful.git"
+  },
+  "keywords": [
+    "Express",
+    "MongoDB",
+    "RESTful"
+  ],
+  "author": "Jay.M.Hu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hstarorg/mongo-restful/issues"
+  },
+  "homepage": "https://github.com/hstarorg/mongo-restful#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-develop-server": "^0.5.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}
